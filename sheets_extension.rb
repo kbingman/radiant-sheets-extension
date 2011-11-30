@@ -14,12 +14,10 @@ class SheetsExtension < Radiant::Extension
   @@stylesheet_filters ||= []
   @@stylesheet_filters += [SassFilter, ScssFilter]
   @@javascript_filters ||= []
-  @@javascript_filters << CoffeeFilter
   
   def activate
     SassFilter
     ScssFilter
-    CoffeeFilter
     MenuRenderer.exclude 'JavascriptPage', 'StylesheetPage'
     
     tab 'Design' do

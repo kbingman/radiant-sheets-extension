@@ -7,15 +7,6 @@ Feature: Managing javascripts
     Given I am logged in as "existing"
     When I go to the "scripts" admin page
     Then I should see "You must have developer or administrator privileges to edit javascripts."
-  
-  Scenario: Listing javascripts
-    Given I am logged in as "designer"
-    When I go to the "scripts" admin page
-    Then I should see "Javascripts"
-    Then I should see "site.js"
-    And I should see "coffee.js"
-    And I should see "Coffee"
-    And I should see "New Javascript"
     
   Scenario: Creating javascripts
     Given I am logged in as "designer"
