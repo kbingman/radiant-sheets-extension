@@ -23,5 +23,4 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   s.add_dependency 'sass', '~>3.1.2'
-  s.add_dependency 'coffee-script', '~>2.2.0'
 end
